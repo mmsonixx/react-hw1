@@ -1,12 +1,21 @@
 export const Colours = ({data}) => {
-    console.log(data)
+    const listItems = data.map(element => 
+      <li>
+        {element}
+      </li>
+    )
   return (
     <>
       <ul>
-      {data.map((element) => (
-        <li>{element}</li>
-    ))}
+      {listItems}
       </ul>
     </>
   );
 };
+
+
+//  <ul>
+//       {data.map((element) => (
+//         <li>{element}</li>
+//     ))}
+//       </ul>
